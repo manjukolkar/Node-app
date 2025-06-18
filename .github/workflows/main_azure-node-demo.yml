@@ -53,7 +53,7 @@ jobs:
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'azure-node-demo-hwfgcth9fmascehd'  # Your exact Azure Web App name
+          app-name: 'azure-node-demo'  # Your exact Azure Web App name
           slot-name: 'Production'
           package: release.zip
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
